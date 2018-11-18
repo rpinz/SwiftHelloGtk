@@ -1,9 +1,9 @@
-// swift-tools-version:4.0
+// swift-tools-version:4.2
 
 import PackageDescription
 
 let package = Package(
-    name: "SwiftHello",
+    name: "HelloGtk",
     products: [
         .executable(
             name: "HelloGtk",
@@ -17,7 +17,11 @@ let package = Package(
     targets: [
         .target(
             name: "HelloGtk",
-            dependencies: ["Gtk"]),
+            dependencies: ["Gtk"],
+            path: "Sources"),
     ],
-    swiftLanguageVersions: [4]
+    swiftLanguageVersions: [
+        .v4,
+        .v4_2
+    ]
 )
